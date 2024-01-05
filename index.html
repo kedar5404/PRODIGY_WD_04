@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">Shruti.</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="ri-close-line" onclick="closemenu()"></i>
+                </ul>
+                <i class="ri-menu-line" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Shruti</span><br>Patil from Pune</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------About-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Professional.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am currently learning UI/UX Development and Full Stack Java Development. I am very passionate about coding and designing stuff. My hobbies are painting, traveling and reading. As a Sketch lover I know importance of designing. My goal is to become successful java and UI/UX coder. I have done many projects like Netflix clone, Disney hotstar clone, Movie recommendation System,Stop watch,Weather application and Banking account.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achevements</p>
+                    </div>
+                    <div class="tab-containts active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            <li><span>Web Development</span><br>Designing web interfaces</li>
+                            <li><span>Java Development</span><br>JDBC, Servlets and JSP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-containts" id="projects">
+                        <ul>
+                            <li><span>Movie Recommender system</span><br>Machine Learning Project with jupyter notebook</li>
+                            <li><span>Banking Account</span><br>Object Oriented Programming concept with Eclipse IDE</li>
+                            <li><span>Hotstar and Neflix Clones</span><br>HTML, CSS, JS on Code Sand Box and Vs code tool</li>
+                        </ul>
+                    </div>
+                    <div class="tab-containts" id="achievements">
+                        <ul>
+                            <li><span>Rifle Shooting</span><br>I have learned Rifle Shooting in my school <br>and also 1st prize with 84/100 points in my School compition</li>
+                            <li><span>State level painting compition</span><br>1st prize in 7th standard</li>
+                            <li><span>Intermediate exam</span><br>'A' grade in 9th standard</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------Services---------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="ri-code-s-slash-line"></i>
+                    <h2>Web Design</h2>
+                    <p>I can provide Frontend development with HTML, CSS, JS, ReactJS and Backend with Oracle, MySQL, JDBC, Servlets and JSP.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="ri-crop-line"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I can provide Frontend development with HTML, CSS, JS and ReactJS as well can use Figma to develop more designing.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <!-- <i class="fa-brands fa-java"></i> -->
+                    <i class="ri-rfid-fill"></i>
+                    <h2>Java Projects</h2>
+                    <p>I can provide services related to java like OOP concept and Advance Java to build Big Projects.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------Portfolio------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Hoobies</h1>
+            <div class="hobbie-list">
+                <div class="hobbie">
+                    <img src="painting1.jpg" alt="">
+                    <div class="layer">
+                        <h3>painting, Drawing and Sketching</h3>
+                        <p>I have participated and win many prices in various painting compitions. We also had a presentation of all drawing and art like ciramic design in our city.</p>
+                        <a href="#"><i class="ri-paint-brush-fill"></i></a>
+                    </div>
+                </div>
+                <div class="hobbie">
+                    <img src="reading1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Reading Books</h3>
+                        <p>I have read many books such as Bhagwat Gita, Genius book series, Rich dad poor dad, Think and grow rich, Cashflow Quadrant and many more.</p>
+                        <a href="#"><i class="ri-book-marked-line"></i></a>
+                    </div>
+                </div>
+                <div class="hobbie">
+                    <img src="travel1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Traveling Visit Places</h3>
+                        <p>I have traveled many amazing places like Ramoji Filmcity, Verul Caves, Kailash Temple and Goa</p>
+                        <a href="#"><i class="ri-road-map-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ---------------------------------Contact------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="ri-send-plane-fill"></i>shrutippatil4@gmail.com</p>
+                    <p><i class="ri-phone-line"></i>8855849591</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shruti-patil-466b6722b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="https://www.instagram.com/2126.shruti?igsh=dHd5ZndrdnE5d2Uy"><i class="ri-instagram-line"></i></a>
+                        <a href="https://github.com/kedar5404"><i class="ri-github-fill"></i></a>
+                        <a href="https://wa.me/qr/MAMS3GWODD5LP1 "><i class="ri-whatsapp-line"></i></a>
+                    </div>
+                    <a href="SHRUTI PATIL.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Thank You so much <i class="ri-hand-heart-fill"></i> to give time for my Portfolio</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontaints = document.getElementsByClassName("tab-containts");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontaint of tabcontaints){
+                tabcontaint.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTmJP9hn_vM1H2IHmkUkLsUtqy3TRQX3MYZw3Vsrnw8YDa5vH7W7Nx0m9s25d_T0kYIQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
